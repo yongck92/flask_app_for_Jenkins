@@ -5,7 +5,7 @@ import random
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world:
+def hello_world():
 	df = pd.read_csv("Names.csv")
 	name = df.query('ID==' + str(random.randint(1,4)))['Name'].to_string(index=False)
 	return "Hello, " + name + "!"
