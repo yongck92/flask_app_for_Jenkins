@@ -1,4 +1,4 @@
-FROM python
+FROM fastgenomics/pandas
 MAINTAINER Michael Mortenson
 ADD . /python-app/flask_app_for_Jenkins
 WORKDIR /python-app/flask_app_for_Jenkins
